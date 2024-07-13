@@ -47,7 +47,7 @@ def hour_parse(rawtime):
         min = int(rawtime[1:])
     if len(rawtime) == 1 or len(rawtime) == 2:
         hour = int(rawtime)
-        min = 00
+        min = '00'
     
     if isam == False and ispm == False and hour < 8:  #operating on the assumption that if i say 7, it's likely 7pm
         ispm = True
