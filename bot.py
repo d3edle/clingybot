@@ -67,7 +67,7 @@ async def send_message(message, user_message, guilds, msgID, is_private):
         
         for guild in guilds: 
             
-            if guild.name == 'King DeedleP\'s server':
+            # if guild.name == 'King DeedleP\'s server':
                 acc_message, date, timeofday = text_parse(user_message)
                 now = datetime.datetime.now()
                 hour, min = hour_parse(timeofday)
